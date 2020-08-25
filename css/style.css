@@ -1,0 +1,565 @@
+#header {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px; }
+
+.header__iconoMenu {
+  width: 25px;
+  height: 25px; }
+
+#header__logotipo {
+  color: black;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 6px;
+  font-weight: bold;
+  justify-content: center;
+  animation-name: efecto_color;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 0s; }
+
+@keyframes efecto_color {
+  0% {
+    color: black; }
+  25% {
+    color: #ffde00; }
+  50% {
+    color: #00ffc6; }
+  75% {
+    color: #ffde00; }
+  100% {
+    color: black; } }
+
+#header__iconos {
+  display: inline;
+  justify-content: flex-end;
+  margin-right: 30px; }
+
+.header__iconoAt {
+  width: 25px;
+  height: 25px;
+  transition: height 1s, width 1s; }
+
+.header__iconoAt:hover {
+  width: 30px;
+  height: 30px; }
+
+.header__iconoInstagram {
+  width: 25px;
+  height: 25px;
+  transition: height 1s, width 1s;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.header__iconoInstagram:hover {
+  width: 30px;
+  height: 30px; }
+
+.header__iconoWish {
+  width: 25px;
+  height: 25px;
+  transition: height 1s, width 1s; }
+
+.header__iconoWish:hover {
+  width: 30px;
+  height: 30px; }
+
+#header__menuDesplegable ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  #header__menuDesplegable ul li {
+    background-color: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0; }
+  #header__menuDesplegable ul a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  #header__menuDesplegable ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    padding: 0; }
+    #header__menuDesplegable ul ul li {
+      float: none;
+      width: 150px; }
+    #header__menuDesplegable ul ul a {
+      line-height: 120%;
+      padding: 10px 15px; }
+
+#header__menuDesplegable ul li:hover > ul {
+  display: block; }
+
+#header__menuDesplegable ul li div:hover > ul {
+  display: block; }
+
+.body__iconoWhatsapp {
+  color: green;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: height 1s, width 1s; }
+
+.body__iconoWhatsapp:hover {
+  width: 60px;
+  height: 60px; }
+
+/*SECTION*/
+#section__index {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+#section__indexIdentidad {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+
+#section__indexImagen {
+  width: 100%;
+  height: auto; }
+
+/* CARRUSEL */
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100vh;
+  z-index: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 60px; }
+
+#section__index--imagenAmarilla {
+  width: 100vh; }
+
+#section__index--imagenVerde {
+  width: 100vh; }
+
+#section__index--imagenRectangular {
+  width: 100vh; }
+
+/* HOME - IDENTIDAD */
+#section__identidad {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center; }
+
+.section__gifIdentidad {
+  padding-top: 130px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  position: relative; }
+
+#section__parrafoIdentidad {
+  font-size: 20px;
+  padding-bottom: 70px; }
+
+/*producto*/
+#section__producto {
+  display: grid;
+  grid-template-areas: "section__parrafoProd1 section__imagenProd1" "section__imagenProd2 section__parrafoProd2" "section__parrafoProd3 section__imagenProd3" "section__imagenProd4 section__parrafoProd4";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+
+#div__section__producto {
+  padding-top: 85px; }
+
+.section__parrafoProducto {
+  background-color: #ffffff;
+  line-height: 25px;
+  margin-top: 25px; }
+
+.section__div__parrafoProducto {
+  text-align: left;
+  width: 600px;
+  margin-top: 100px;
+  margin-left: 100px; }
+
+.section__imagenesProducto {
+  background-color: none;
+  height: 600px; }
+
+.section__subTituloParrafoProducto {
+  font-size: 20px;
+  letter-spacing: 3px; }
+
+/*info*/
+#section__informacionNewsletter {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 130px;
+  align-items: center; }
+
+#news {
+  background-color: white;
+  border: solid grey;
+  border-width: 1px; }
+
+#emailNews {
+  border-width: 0.1px; }
+
+.section__newsletterSuscripcion {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: bold; }
+
+.section__newsletterNovedades {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #939393; }
+
+#textConsulta {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  padding-top: 75px;
+  padding-bottom: 20px;
+  color: #77797b; }
+
+#text {
+  height: 150px; }
+
+#consulta {
+  background-color: white;
+  border: solid grey;
+  border-width: 1px; }
+
+section input {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #939393;
+  border-radius: 7px; }
+
+section div input {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  background: #939393;
+  border: 1px solid #939393;
+  width: 85px;
+  height: 40px; }
+
+/*menu info*/
+#footer__menuPie {
+  padding-top: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+#footer__menuPie ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+#footer__menuPie ul a {
+  background-color: none;
+  color: black;
+  text-decoration: none;
+  border-top: solid grey;
+  border-bottom: solid grey;
+  border-width: 1px;
+  font-size: 18px;
+  padding: 35px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative; }
+
+#footer__cuidado:hover {
+  color: grey; }
+
+#footer__cuidado {
+  transition: color 0,5s; }
+
+#footer__compra:hover {
+  color: grey; }
+
+#footer__compra {
+  transition: color 0,5s; }
+
+#footer__pregunta:hover {
+  color: grey; }
+
+#footer__pregunta {
+  transition: color 0,5s; }
+
+footer .container {
+  padding-top: 100px;
+  padding-bottom: 25px; }
+
+.section__SubTitulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  padding-top: 160px; }
+
+#footer__menu2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-right: 0px; }
+
+#footer__textoMenu2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 100px; }
+
+#botonProd {
+  background: none;
+  border: none;
+  text-decoration: none;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 3px; }
+
+@media (max-width: 768px) {
+  #header {
+    width: 100%;
+    margin-top: 5px; }
+  #header__logotipo {
+    font-size: 12px;
+    letter-spacing: 4px; }
+  #section__informacionNewsletter {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 50px;
+    align-items: center; }
+  #textConsulta {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #77797b; }
+  #header__iconos {
+    margin-right: 5px;
+    font-family: 'Roboto', sans-serif; }
+  .header__iconoAt {
+    width: 23px;
+    height: 23px;
+    transition: height 1s, width 1s; }
+  .header__iconoAt:hover {
+    width: 23px;
+    height: 23px; }
+  .header__iconoInstagram {
+    width: 23px;
+    height: 23px;
+    transition: height 1s, width 1s;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .header__iconoInstagram:hover {
+    width: 23px;
+    height: 23px; }
+  .header__iconoWish {
+    width: 23px;
+    height: 23px;
+    transition: height 1s, width 1s;
+    padding-right: 5px; }
+  .header__iconoWish:hover {
+    width: 23px;
+    height: 23px; }
+  #homeIdentidad {
+    width: 100%; }
+  .carousel-inner img {
+    width: 50vh;
+    z-index: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 20px; }
+  #imagenAmarilla {
+    width: 50vh; }
+  #imagenVerde {
+    width: 50vh; }
+  #imagenRectangular {
+    width: 50vh; }
+  #contacto2 {
+    background-image: none;
+    background-color: #b6b6b6;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-right: 0px; }
+  #textoContacto2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px; }
+  #footer__menu2 {
+    background-image: none; }
+  #footer__menuPie ul a {
+    border-top: none;
+    border-bottom: none; } }
+
+#header {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px; }
+
+.header__iconoMenu {
+  width: 25px;
+  height: 25px; }
+
+#header__logotipo {
+  color: black;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 6px;
+  font-weight: bold;
+  justify-content: center;
+  animation-name: efecto_color;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 0s; }
+
+@keyframes efecto_color {
+  0% {
+    color: black; }
+  25% {
+    color: #ffde00; }
+  50% {
+    color: #00ffc6; }
+  75% {
+    color: #ffde00; }
+  100% {
+    color: black; } }
+
+#header__iconos {
+  display: inline;
+  justify-content: flex-end;
+  margin-right: 30px; }
+
+.header__iconoAt {
+  width: 25px;
+  height: 25px;
+  transition: height 1s, width 1s; }
+
+.header__iconoAt:hover {
+  width: 30px;
+  height: 30px; }
+
+.header__iconoInstagram {
+  width: 25px;
+  height: 25px;
+  transition: height 1s, width 1s;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.header__iconoInstagram:hover {
+  width: 30px;
+  height: 30px; }
+
+.header__iconoWish {
+  width: 25px;
+  height: 25px;
+  transition: height 1s, width 1s; }
+
+.header__iconoWish:hover {
+  width: 30px;
+  height: 30px; }
+
+#header__menuDesplegable ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  #header__menuDesplegable ul li {
+    background-color: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0; }
+  #header__menuDesplegable ul a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  #header__menuDesplegable ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    padding: 0; }
+    #header__menuDesplegable ul ul li {
+      float: none;
+      width: 150px; }
+    #header__menuDesplegable ul ul a {
+      line-height: 120%;
+      padding: 10px 15px; }
+
+#header__menuDesplegable ul li:hover > ul {
+  display: block; }
+
+#header__menuDesplegable ul li div:hover > ul {
+  display: block; }
